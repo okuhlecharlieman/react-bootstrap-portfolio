@@ -1,6 +1,76 @@
+:root {
+ --blue: #03045E;   /*Navbar and footer*/
+ --blue1: #023E8A; /**/
+--blue2: #0077B6;/**/
+--blue3: #0096C7;/**/
+--blue4: #00B4D8;/**/
+--blue5: #48CAE4;/**/
+--blue6: #90E0EF;/**/
+--blue7: #ADE8F4;/**/
+--blue8: #CAF0F8;/*Text*/
+}
+h1{
+  color:var(--blue6);
+}
+p{
+  color:var(--blue8);
+}
 .App {
   text-align: center;
+background-image: radial-gradient(circle, var(--blue) 0%, var(--blue2) 100%);
 }
+.intro{
+  animation: myAnim 5s ease 0s 3 normal forwards;
+  background-image: -moz-radial-gradient(circle,var(--blue2) 0%,var(--blue4) 100%);
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +105,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+.MyFooter{
+  background-color: var(--blue);
+}
+
+.MyNav{
+background-color:var(--blue);
 }
