@@ -6,9 +6,9 @@ import "../App.css"
 
 function PortNavbar() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="MyNav text-light"  sticky="top" >
-      <Container>
-        <Navbar.Brand href="#home">Logo</Navbar.Brand>
+    <Navbar collapseOnSelect expand="lg" className="MyNav "  sticky="top" >
+      <Container   >
+        <Navbar.Brand href="#home"><img src="https://i.ibb.co/pXwhH3s/android-chrome-512x512.png" alt="logo-image" width="60px"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
