@@ -6,7 +6,7 @@ const WorkParticipation = () =>{
         <div className="container ">
           <div className="Text d-flex row justify-content-end ">
             <div className="align-self-end col-lg-12 text-left mt-5" >
-                <h1 className="display-6">Work Participation</h1>
+                <h1 className="display-6">Work experiences</h1>
                 <hr />
                                <div>
                                  <h3>Printer Technician</h3>
