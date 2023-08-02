@@ -5,6 +5,7 @@ import Intro from './Components/Intro';
 import Photo from './Components/Photo';
 import PersonalDetails from './Components/PersonalDetailsSection';
 import Education from './Components/Education';
+
 import WorkParticipation from './Components/WorkParticipation';
 import WorkExpertise from './Components/WorkExpertise';
 import Contact from './Components/Contact';
@@ -17,7 +18,8 @@ function App() {
       <Navbar/>
       <Intro/>
       <PersonalDetails/>
-      <Education/>
+      <Education/>      
+
       <WorkParticipation/>
       <WorkExpertise/>
     <Contact/>

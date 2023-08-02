@@ -9,6 +9,7 @@
 --blue7: rgba(173, 232, 244, 0.4) ;/*Navbar and footer  #ADE8F4*/
 --blue8:rgba(202, 240, 248, 1) ;/*Text #CAF0F8*/
 }
+
 a{
   color:var(--blue6);
 }
@@ -116,9 +117,7 @@ background:var(--blue7);
 .Text{
 	color: var(--blue8);
 }
-.card{
-	background:var(--blue5);
-}
+
 .card-header{
 	background:var(--blue7);
 }
