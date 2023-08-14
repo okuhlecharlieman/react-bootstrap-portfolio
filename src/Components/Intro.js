@@ -4,7 +4,9 @@ import Photo from "./Photo";
 
 const Intro =()=>{
     return(
-        <div  >
+        <div id="home">
+    
+     
         <div className="pmd-intro-bg-img " /*style={{backgroundImage:  'url(https://i.ibb.co/PtyTfX4/dave-netto-w-WYw-Yi-Co-Vw-I-unsplash.jpg)',backgroundRepeat:"no-repeat"}}*/>
           <div className="container ">
             <div className="Text   d-flex row justify-content-end ">
@@ -15,7 +17,7 @@ const Intro =()=>{
                   <p className="lead">"I specialize in crafting beautiful and functional websites that deliver exceptional user experiences. 
                   My expertise in web design was honed through my studies in Information Technology at Nelson Mandela University."
                   </p>
-                  <a href="javascript:void(0);" className="btn btn-outline-light pmd-ripple-effect my-5 btn-success">Hire me</a>  <a href="javascript:void(0);" className="btn btn-outline-light pmd-ripple-effect my-5">Download Cv</a>
+                  <a href="#contact" className="btn btn-outline-light pmd-ripple-effect my-5 btn-success">Hire me</a>  <a href="javascript:void(0);" className="btn btn-outline-light pmd-ripple-effect my-5">Download Cv</a>
               </div>
             </div>
           </div>

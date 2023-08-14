@@ -3,7 +3,7 @@ import "../App.css"
 
 const PersonalDetails = () => {
     return(
-        <div >
+        <div id="about" >
         <div className="container">
           <div className="Text d-flex row justify-content-end ">
             <div className="align-self-end  col-lg-12 text-left mt-5" >

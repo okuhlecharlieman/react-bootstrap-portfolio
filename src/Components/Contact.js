@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 
 function Contact() {
   return (
-    <div  className="container Text   ">   
+    <div id='contact' className="container Text   ">   
       <h1 className="display-6">Contact</h1>
       <hr></hr>
    <div className=' d-md-flex '>

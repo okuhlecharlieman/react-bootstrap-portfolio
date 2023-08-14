@@ -11,7 +11,7 @@ function Projects() {
     };
   
   return (
-    <div >
+    <div id='projects' >
     <div className="container ">
       <div className="Text d-flex row justify-content-end ">
         <div className="align-self-end col-lg-12 text-left mt-5" >
