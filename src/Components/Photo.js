@@ -9,7 +9,9 @@ const Photo = () => {
        
                 
                                   <img
-                                    src="https://i.imgur.com/QIrZWGIs.jpg"
+                                  class="rounded-circle img-fluid "
+                                  src="https://i.ibb.co/Jr96d5h/IMG-2516-removebg-preview.png"
+                                   //  src="https://i.ibb.co/Tg7gFz4/IMG-2516.png" 
                                     alt="Alan L. Hart"
                                   />
             </div>

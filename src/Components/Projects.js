@@ -12,14 +12,15 @@ function Projects() {
   
   return (
     <div id='projects' >
-    <div className="container ">
+    <div className="container my-5 ">
       <div className="Text d-flex row justify-content-end ">
         <div className="align-self-end col-lg-12 text-left mt-5" >
             <h1 className="display-6">Projects</h1>
             <hr></hr>
             <Carousel data-bs-theme="dark">
       <Carousel.Item>
-      <img  width="512" height="512" src="https://img.icons8.com/nolan/512/project-management.png" alt="project-management"/>
+  
+      <img className="img-fluid img-thumbnail"  src="https://i.ibb.co/Prxnbrz/3.png"  alt="project-management"/>
    
         <Carousel.Caption>
           <h5>First slide label</h5>
@@ -27,7 +28,7 @@ function Projects() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <img  width="512" height="512" src="https://img.icons8.com/nolan/512/project-management.png" alt="project-management"/>
+      <img className="img-fluid img-thumbnail"   src="https://i.ibb.co/T2YV92b/2.png" alt="project-management"/>
 
         <Carousel.Caption>
           <h5>Second slide label</h5>
@@ -35,7 +36,7 @@ function Projects() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <img    width="512" height="512"  src="https://img.icons8.com/nolan/512/project-management.png" alt="project-management"/>
+      <img   src="https://i.ibb.co/T2YV92b/2.png" alt="project-management"/>
 
         <Carousel.Caption>
           <h5>Third slide label</h5>
