@@ -1,8 +1,10 @@
 import React from 'react'
 import "../App.css"
+
+import Sicons from './icons'
 function Footer() {
   return (
-    <div className="MyFooter">Footer</div>
+    <div className="MyFooter"><Sicons/></div>
   )
 }
 

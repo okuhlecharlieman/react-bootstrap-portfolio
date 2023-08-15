@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "../App.css"
+import Sicons from './icons';
 
 function PortNavbar() {
   return (
@@ -21,7 +22,7 @@ function PortNavbar() {
             
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Icons</Nav.Link>
+            <Nav.Link href="#deets"><Sicons/></Nav.Link>
         
           </Nav>
         </Navbar.Collapse>
