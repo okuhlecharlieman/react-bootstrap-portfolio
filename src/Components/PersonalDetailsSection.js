@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css"
+import {TypeAnimation} from 'react-type-animation'
 
 const PersonalDetails = () => {
     return(
@@ -7,7 +8,22 @@ const PersonalDetails = () => {
         <div className="container">
           <div className="Text d-flex row justify-content-end ">
             <div className="align-self-end  col-lg-12 text-left mt-5" >
-                <h1 className="display-6">  I Am A Web Developer||</h1>
+             
+               <span className="mx-5 display-6 d-flex">   I Am A     <TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'Full Stack Developer',
+        2000, // wait 2s before replacing "Full Stack Developer" with "Web Developer"
+        'Web Developer',
+        2000,
+        'Software Developer',
+        2000,
+      ]}
+      wrapper="span"
+      speed={50}
+      style={{ fontSize: '1em', paddingLeft:'5px' }}
+      repeat={Infinity}
+        />|</span>
                 <hr />
    <div className="d-md-flex ">
      <div className="card col-md-3 m-2 mx-5 mx-auto bg-info-subtle" style={{"width":"18rem"}}>

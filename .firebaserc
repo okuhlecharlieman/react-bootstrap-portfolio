@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "fifi-d090b",
+    "production": "fifi-d090b"
+  },
+  "targets": {},
+  "etags": {}
+}
