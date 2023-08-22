@@ -12,7 +12,7 @@ const Intro =()=>{
             <div className="Text   d-flex row justify-content-end ">
               <div className="align-self-start col-lg-6 text-left mt-5"> <Photo/></div>
               <div className="intro align-self-end col-lg-6 text-left mt-5" >
-                  <h1 className="display-6">Here I'm Charlieman Okuhle</h1>
+                  <h1 className="display-6">Hi I'm Charlieman Okuhle</h1>
                   <hr />
                   <p className="lead">"I specialize in crafting beautiful and functional websites that deliver exceptional user experiences. 
                   My expertise in web design was honed through my studies in Information Technology at Nelson Mandela University."

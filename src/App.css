@@ -122,3 +122,9 @@ background:var(--blue7);
 	background:var(--blue7);
 }
 
+.Contact{
+	box-shadow: none;
+	border-width: 0 0 2px 0;
+	border-color: #000;
+	
+}
