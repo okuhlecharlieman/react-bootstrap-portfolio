@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import ReCAPTCHA from "react-google-recaptcha";
 import '../App.css';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -22,9 +23,12 @@ const firebaseConfig = {
   measurementId: "G-G7YY9SB8F5"
 };
 
+//recaptcha 
+const YourRecaptchaSiteKey = '6LfTkcsnAAAAALG7VEf5xtoODSthI0y2Mnf5-_Vj';
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+//const analytics = getAnalytics(app);
 const db = getDatabase();
 
 
@@ -33,16 +37,21 @@ function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [comment, setComment] = useState('');
-
+  const [recaptchaValue, setRecaptchaValue] = useState(null); // To store the reCAPTCHA response.
   // Event handler for form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
   
+    if (!recaptchaValue) {
+      alert("Please complete the reCAPTCHA.");
+      return;
+    }
     // Create an object with the form data
     const formData = {
       name,
       email,
       comment,
+      recaptchaValue, // Include the reCAPTCHA response in your form data
     };
   
     try {
@@ -133,6 +142,10 @@ function Contact() {
                 onChange={(e) => setComment(e.target.value)}
               />
             </Form.Group>
+            <ReCAPTCHA
+              sitekey={YourRecaptchaSiteKey}
+              onChange={(value) => setRecaptchaValue(value)} // Store reCAPTCHA response
+            />
             <div className='my-3'>
               <Button className="btn btn-mod btn-border btn-large" type="submit">Submit form</Button>
             </div>
