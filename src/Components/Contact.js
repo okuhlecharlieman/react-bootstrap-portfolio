@@ -2,7 +2,30 @@ import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import '../App.css';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import {getDatabase,ref, set,push} from "firebase/database"
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAMY77Sch9krEzohsaYhcOr8I7IdgpB-Q4",
+  authDomain: "fifi-d090b.firebaseapp.com",
+  databaseURL: "https://fifi-d090b-default-rtdb.firebaseio.com",
+  projectId: "fifi-d090b",
+  storageBucket: "fifi-d090b.appspot.com",
+  messagingSenderId: "114838649432",
+  appId: "1:114838649432:web:8628170c9301787314682d",
+  measurementId: "G-G7YY9SB8F5"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const db = getDatabase();
 
 
 function Contact() {
@@ -12,18 +35,38 @@ function Contact() {
   const [comment, setComment] = useState('');
 
   // Event handler for form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // You can do something with the form data here, like sending it to a server
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Comment:', comment);
-
   
-
+    // Create an object with the form data
+    const formData = {
+      name,
+      email,
+      comment,
+    };
   
+    try {
+      // Get a reference to the database location where you want to store the data
+      const dbRef = ref(db, "contacts");
+  
+   
+    // Push the form data to the database
+    const newContactRef = push(dbRef);
+    await set(newContactRef, formData);
+  
+      // Clear the form fields after successful submission
+      setName('');
+      setEmail('');
+      setComment('');
+  
+      // Optionally, you can show a success message or redirect the user
+      console.log("Form data sent to Firebase!");
+    } catch (error) {
+      // Handle errors here (e.g., show an error message)
+      console.error("Error sending form data to Firebase:", error);
+    }
   };
+  
 
   return (
     <div id='contact' className="container Text">
@@ -65,9 +108,7 @@ function Contact() {
                 border: 'none',
                 borderBottom: '5px solid #90E0EF',
                 background: 'transparent',
-                borderRadius: 0,
-                '::placeholder': {
-                  color: 'red' }
+                borderRadius: 0
               }}
               className='my-3'
                 type="email"
