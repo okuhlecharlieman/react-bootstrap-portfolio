@@ -1,14 +1,16 @@
-import React from 'react'
-import "../App.css"
+import React from "react";
+import "../App.css";
 
-import Sicons from './icons'
+import Sicons from "./icons";
 function Footer() {
   return (
-    <div className="MyFooter"><Sicons/></div>
-  )
+    <div className="MyFooter">
+      <Sicons />
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
 /*   <div >
         <div className="container ">
           <div className="Text d-flex row justify-content-end ">

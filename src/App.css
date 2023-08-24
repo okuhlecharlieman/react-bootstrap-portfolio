@@ -1,77 +1,73 @@
 :root {
- --blue: rgba(3, 4, 94, 1);/* #03045E*/
- --blue1: rgba(2, 62, 138, 1);/* core #023E8A*/
---blue2:rgba(0, 119, 182, 1);/*#0077B6*/
---blue3: rgba(0, 150, 199, 1);/*#0096C7*/
---blue4: rgba(0, 180, 216, 1);/*#00B4D8*/
---blue5: rgba(72, 202, 228, 1);/*#48CAE4*/
---blue6: rgba(144, 224, 239, 1);/*#90E0EF*/
---blue7: rgba(173, 232, 244, 0.4) ;/*Navbar and footer  #ADE8F4*/
---blue8:rgba(202, 240, 248, 1) ;/*Text #CAF0F8*/
+  --blue: rgba(3, 4, 94, 1); /* #03045E*/
+  --blue1: rgba(2, 62, 138, 1); /* core #023E8A*/
+  --blue2: rgba(0, 119, 182, 1); /*#0077B6*/
+  --blue3: rgba(0, 150, 199, 1); /*#0096C7*/
+  --blue4: rgba(0, 180, 216, 1); /*#00B4D8*/
+  --blue5: rgba(72, 202, 228, 1); /*#48CAE4*/
+  --blue6: rgba(144, 224, 239, 1); /*#90E0EF*/
+  --blue7: rgba(173, 232, 244, 0.4); /*Navbar and footer  #ADE8F4*/
+  --blue8: rgba(202, 240, 248, 1); /*Text #CAF0F8*/
 }
 
-a{
-  color:var(--blue6);
+a {
+  color: var(--blue6);
 }
-p{
-  color:var(--blue8);
+p {
+  color: var(--blue8);
 }
 .App {
   text-align: center;
-background-image: radial-gradient(circle, var(--blue) 0%, var(--blue2) 100%);
+  background-image: radial-gradient(circle, var(--blue) 0%, var(--blue2) 100%);
 }
-.intro{
+.intro {
   animation: myAnim 5s ease 0s 3 normal forwards;
-
 }
 @keyframes myAnim {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 1;
-		transform: translateY(-45px);
-	}
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
 
-	24% {
-		opacity: 1;
-	}
+  24% {
+    opacity: 1;
+  }
 
-	40% {
-		animation-timing-function: ease-in;
-		transform: translateY(-24px);
-	}
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
 
-	65% {
-		animation-timing-function: ease-in;
-		transform: translateY(-12px);
-	}
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
 
-	82% {
-		animation-timing-function: ease-in;
-		transform: translateY(-6px);
-	}
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
 
-	93% {
-		animation-timing-function: ease-in;
-		transform: translateY(-4px);
-	}
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
 
-	25%,
-	55%,
-	75%,
-	87% {
-		animation-timing-function: ease-out;
-		transform: translateY(0px);
-	}
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
 
-	100% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateY(0px);
-	}
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
-
-
-
 
 .App-logo {
   height: 40vmin;
@@ -107,24 +103,23 @@ background-image: radial-gradient(circle, var(--blue) 0%, var(--blue2) 100%);
     transform: rotate(360deg);
   }
 }
-.MyFooter{
+.MyFooter {
   background-color: var(--blue7);
 }
 
-.MyNav{
-background:var(--blue7);
+.MyNav {
+  background: var(--blue7);
 }
-.Text{
-	color: var(--blue8);
-}
-
-.card-header{
-	background:var(--blue7);
+.Text {
+  color: var(--blue8);
 }
 
-.Contact{
-	box-shadow: none;
-	border-width: 0 0 2px 0;
-	border-color: #000;
-	
+.card-header {
+  background: var(--blue7);
+}
+
+.Contact {
+  box-shadow: none;
+  border-width: 0 0 2px 0;
+  border-color: #000;
 }
