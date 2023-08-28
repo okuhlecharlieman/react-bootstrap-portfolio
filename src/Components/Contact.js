@@ -26,67 +26,95 @@ const firebaseConfig = {
 //recaptcha
 const YourRecaptchaSiteKey = "6LfTkcsnAAAAALG7VEf5xtoODSthI0y2Mnf5-_Vj";
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-//const analytics = getAnalytics(app);
 const db = getDatabase();
 
 function Contact() {
-  // Create state variables to store form input values
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
-  const [recaptchaValue, setRecaptchaValue] = useState(null); // To store the reCAPTCHA response.
-  // Event handler for form submission
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [commentError, setCommentError] = useState("");
+  const [recaptchaValue, setRecaptchaValue] = useState(null);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    let valid = true;
+
+    if (!name.trim()) {
+      setNameError("Name is required");
+      valid = false;
+    } else {
+      setNameError("");
+    }
+
+    if (!email.trim()) {
+      setEmailError("Email is required");
+      valid = false;
+    } else if (!isValidEmail(email)) {
+      setEmailError("Invalid email format");
+      valid = false;
+    } else {
+      setEmailError("");
+    }
+
+    if (!comment.trim()) {
+      setCommentError("Comment is required");
+      valid = false;
+    } else {
+      setCommentError("");
+    }
 
     if (!recaptchaValue) {
       alert("Please complete the reCAPTCHA.");
+      valid = false;
+    }
+
+    if (!valid) {
       return;
     }
-    // Create an object with the form data
+
     const formData = {
       name,
       email,
       comment,
-      recaptchaValue, // Include the reCAPTCHA response in your form data
+      recaptchaValue,
     };
 
     try {
-      // Get a reference to the database location where you want to store the data
       const dbRef = ref(db, "contacts");
-
-      // Push the form data to the database
       const newContactRef = push(dbRef);
       await set(newContactRef, formData);
 
-      // Clear the form fields after successful submission
       setName("");
       setEmail("");
       setComment("");
 
-      // Optionally, you can show a success message or redirect the user
       console.log("Form data sent to Firebase!");
     } catch (error) {
-      // Handle errors here (e.g., show an error message)
       console.error("Error sending form data to Firebase:", error);
     }
+  };
+
+  const isValidEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
   };
 
   return (
     <div id="contact" className="container Text">
       <h1 className="display-6">Contact</h1>
       <hr />
-      <div className=" d-md-flex ">
-        <div className="col-12 m-auto  col-md-3 intro">
+      <div className="d-md-flex">
+        <div className="col-12 m-auto col-md-3 intro">
           <img
             className="img-thumbnail"
             src="https://media.giphy.com/media/rWLXay3IYwyeQL1Pkn/giphy.gif"
             alt="Animated gif"
           />
         </div>
-        <div className=" col-md-4 m-5 m-auto my-5">
+        <div className="col-md-4 m-5 m-auto my-5">
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="form.Name">
               <Form.Control
@@ -102,6 +130,7 @@ function Contact() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
+              {nameError && <div className="text-danger">{nameError}</div>}
             </Form.Group>
 
             <Form.Group controlId="form.Email">
@@ -118,7 +147,9 @@ function Contact() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
+              {emailError && <div className="text-danger">{emailError}</div>}
             </Form.Group>
+
             <Form.Group controlId="form.Textarea">
               <Form.Control
                 style={{
@@ -133,11 +164,16 @@ function Contact() {
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
               />
+              {commentError && (
+                <div className="text-danger">{commentError}</div>
+              )}
             </Form.Group>
+
             <ReCAPTCHA
               sitekey={YourRecaptchaSiteKey}
-              onChange={(value) => setRecaptchaValue(value)} // Store reCAPTCHA response
+              onChange={(value) => setRecaptchaValue(value)}
             />
+
             <div className="my-3">
               <Button
                 className="btn btn-mod btn-border btn-large"
