@@ -54,9 +54,9 @@ const PersonalDetails = () => {
                   eager to explore the latest advances in technology.
                 </p>
                 <img
-                  class="rounded-circle img-fluid "
-                  width={120}
-                  src="      https://media.tenor.com/MsXItVtBsDQAAAAC/scaler-create-impact.gif"
+                  class="rounded img-fluid mt-3 "
+                  width={220}
+                  src=" https://i.pinimg.com/originals/81/17/8b/81178b47a8598f0c81c4799f2cdd4057.gif"
                   alt="Alan L. Hart"
                 />
               </div>

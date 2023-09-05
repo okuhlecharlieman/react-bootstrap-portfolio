@@ -3,10 +3,12 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import ReCAPTCHA from "react-google-recaptcha";
 import "../App.css";
+import emailjs from "emailjs-com";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getDatabase, ref, set, push } from "firebase/database";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -23,6 +25,11 @@ const firebaseConfig = {
   measurementId: "G-G7YY9SB8F5",
 };
 
+const emailjsConfig = {
+  serviceID: "service_xn3dtsb",
+  templateID: "template_4igzdct",
+  userID: "bZ7p5KzirC9nE9V9D",
+};
 //recaptcha
 const YourRecaptchaSiteKey = "6LfTkcsnAAAAALG7VEf5xtoODSthI0y2Mnf5-_Vj";
 
@@ -86,6 +93,20 @@ function Contact() {
       const dbRef = ref(db, "contacts");
       const newContactRef = push(dbRef);
       await set(newContactRef, formData);
+
+      // Send email using email.js
+      const emailParams = {
+        from_name: name,
+        from_email: email,
+        message: comment,
+      };
+
+      await emailjs.send(
+        emailjsConfig.serviceID,
+        emailjsConfig.templateID,
+        emailParams,
+        emailjsConfig.userID
+      );
 
       setName("");
       setEmail("");

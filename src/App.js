@@ -8,6 +8,7 @@ import WorkParticipation from "./Components/WorkParticipation";
 import WorkExpertise from "./Components/WorkExpertise";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import Services from "./Components/Services";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
 
       <WorkParticipation />
       <WorkExpertise />
+      <Services />
       <Projects />
       <Contact />
       <Footer />
