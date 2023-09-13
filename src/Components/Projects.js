@@ -53,10 +53,10 @@ function Projects() {
 
                 <Carousel.Caption>
                   <h5>Third slide label</h5>
-                  <p>
+                  {/* <p>
                     Praesent commodo cursus magna, vel scelerisque nisl
                     consectetur.
-                  </p>
+                  </p> */}
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
