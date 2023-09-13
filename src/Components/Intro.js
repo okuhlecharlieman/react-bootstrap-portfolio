@@ -36,7 +36,7 @@ const Intro = () => {
                 className="btn btn-outline-light pmd-ripple-effect my-5"
                 download=""
               >
-                Download Cv
+                Download CV
               </a>
             </div>
           </div>

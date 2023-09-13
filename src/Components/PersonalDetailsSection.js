@@ -42,6 +42,12 @@ const PersonalDetails = () => {
                     Languages: English, Isixhosa, Zulu
                     <br />
                     Nationality: South African
+                    <div>
+                      <img
+                        src="https://img.icons8.com/fluency/48/south-africa-circular.png"
+                        alt="south-africa-circular"
+                      />
+                    </div>
                   </li>
                 </ul>
               </div>
