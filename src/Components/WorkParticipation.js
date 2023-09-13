@@ -23,15 +23,13 @@ const WorkParticipation = () => {
                   <div className="services-texts">
                     <h3 className="title mb-3">Printer Technician</h3>
                     <p className="text-light-muted mb-4">
-                      After completing my IT diploma, I sought out new
-                      opportunities and decided to make the move to Cape Town.
-                      It was there that I landed my first job at Raydian, where
-                      I worked as a printer technician. In this role, I was
-                      responsible for the installation and maintenance of
-                      printers, ensuring that they ran smoothly and efficiently
-                      for our clients. It was a challenging yet rewarding
-                      experience that allowed me to hone my technical skills and
-                      develop my customer service abilities.
+                      After earning my IT diploma, I relocated to Cape Town and
+                      secured my first job at Raydian as a printer technician.
+                      In this position, I was responsible for installing and
+                      maintaining printers to ensure optimal performance for our
+                      clients. This role was both challenging and rewarding,
+                      providing me with the opportunity to enhance my technical
+                      skills and customer service expertise.
                     </p>
                   </div>
                 </div>
@@ -75,20 +73,15 @@ const WorkParticipation = () => {
                   <div className="services-texts">
                     <h3 className="title mb-3">Systems Development</h3>
                     <p className="text-light-muted mb-4">
-                      I'm currently enrolled in the systems development pathway,
-                      which is designed to bridge the skills gap in software
-                      engineering. This program offers a comprehensive
-                      curriculum that covers both front-end and back-end web
-                      development, with 12 modules aligned to SETA unit
-                      standards. I have the flexibility to select and combine
-                      modules such as HTML, CSS, JavaScript, Python, and Java to
-                      create personalized 6-month programs. Upon completion,
-                      I'll have the opportunity to earn industry certifications
-                      like Microsoft Python Certification and Oracle Java
-                      Certification. The program is fully aligned to the
-                      National Qualifications Framework (NQF) Unit Standards,
-                      which will ensure that I'm equipped with the necessary
-                      skills and knowledge to excel in this exciting field.
+                      I enrolled in a systems development program that addressed
+                      the software engineering skills gap. The curriculum
+                      covered front-end and back-end web development with
+                      flexible module choices like HTML, CSS, JavaScript,
+                      Python, and Java. Upon completion, industry certifications
+                      like Microsoft Python and Oracle Java were available. The
+                      program aligned with National Qualifications Framework
+                      (NQF) standards, providing the skills needed for success
+                      in the field.
                     </p>
                   </div>
                 </div>
