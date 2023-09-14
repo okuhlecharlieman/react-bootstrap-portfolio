@@ -20,12 +20,12 @@ function Projects() {
               <Carousel.Item>
                 <img
                   className="img-fluid img-thumbnail"
-                  src="https://i.ibb.co/Prxnbrz/3.png"
-                  alt="project-management"
+                  src="https://i.ibb.co/4st14pX/Screenshot-1.png"
+                  alt="aglet-image"
                 />
 
                 <Carousel.Caption>
-                  <h5>First slide label</h5>
+                  <h5>Aglet Challenge</h5>
                   {/* <p>
                     Nulla vitae elit libero, a pharetra augue mollis interdum.
                   </p> */}
@@ -34,12 +34,12 @@ function Projects() {
               <Carousel.Item>
                 <img
                   className="img-fluid img-thumbnail"
-                  src="https://i.ibb.co/T2YV92b/2.png"
-                  alt="project-management"
+                  src="https://i.ibb.co/Jsc5Bxk/Screenshot-2023-09-14-115125.png"
+                  alt="portfolio"
                 />
 
                 <Carousel.Caption>
-                  <h5>Second slide label</h5>
+                  <h5>My Portfolio</h5>
                   {/* <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p> */}
@@ -47,12 +47,13 @@ function Projects() {
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                  src="https://i.ibb.co/T2YV92b/2.png"
-                  alt="project-management"
+                  className="img-fluid img-thumbnail"
+                  src="https://i.ibb.co/xSDgSm3/Screenshot-2023-08-16-103731.png"
+                  alt="School Website"
                 />
 
                 <Carousel.Caption>
-                  <h5>Third slide label</h5>
+                  <h5>School Website</h5>
                   {/* <p>
                     Praesent commodo cursus magna, vel scelerisque nisl
                     consectetur.
