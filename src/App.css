@@ -136,3 +136,7 @@ p {
     width: 40%;
   }
 }
+
+.form::placeholder {
+  color: aliceblue;
+}

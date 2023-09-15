@@ -179,7 +179,8 @@ function Contact() {
                   background: "transparent",
                   borderRadius: 0,
                 }}
-                className="my-3"
+                className="my-3 form"
+                placeholder="Massege"
                 as="textarea"
                 rows={3}
                 value={comment}
