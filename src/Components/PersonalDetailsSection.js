@@ -10,7 +10,7 @@ const PersonalDetails = () => {
           <div className="align-self-end  col-lg-12 text-left mt-5">
             <span className="mx-5 display-6 d-flex">
               {" "}
-              I Am A{" "}
+              I Am A
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed out once, initially

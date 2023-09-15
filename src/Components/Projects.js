@@ -18,12 +18,13 @@ function Projects() {
             <hr></hr>
             <Carousel data-bs-theme="dark">
               <Carousel.Item>
-                <img
-                  className="img-fluid img-thumbnail"
-                  src="https://i.ibb.co/4st14pX/Screenshot-1.png"
-                  alt="aglet-image"
-                />
-
+                <a href="https://aglet-33abe.web.app/" target="_blank">
+                  <img
+                    className="img-fluid img-thumbnail"
+                    src="https://i.ibb.co/4st14pX/Screenshot-1.png"
+                    alt="aglet-image"
+                  />
+                </a>
                 <Carousel.Caption>
                   <h5>Aglet Challenge</h5>
                   {/* <p>
@@ -32,12 +33,13 @@ function Projects() {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img
-                  className="img-fluid img-thumbnail"
-                  src="https://i.ibb.co/Jsc5Bxk/Screenshot-2023-09-14-115125.png"
-                  alt="portfolio"
-                />
-
+                <a href="https://intwana.rf.gd/Charlie/" target="_blank">
+                  <img
+                    className="img-fluid img-thumbnail"
+                    src="https://i.ibb.co/Jsc5Bxk/Screenshot-2023-09-14-115125.png"
+                    alt="portfolio"
+                  />
+                </a>
                 <Carousel.Caption>
                   <h5>My Portfolio</h5>
                   {/* <p>
@@ -46,12 +48,16 @@ function Projects() {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img
-                  className="img-fluid img-thumbnail"
-                  src="https://i.ibb.co/xSDgSm3/Screenshot-2023-08-16-103731.png"
-                  alt="School Website"
-                />
-
+                <a
+                  href="https://dynamic-unicorn-de5d72.netlify.app/"
+                  target="_blank"
+                >
+                  <img
+                    className="img-fluid img-thumbnail"
+                    src="https://i.ibb.co/xSDgSm3/Screenshot-2023-08-16-103731.png"
+                    alt="School Website"
+                  />
+                </a>
                 <Carousel.Caption>
                   <h5>School Website</h5>
                   {/* <p>
