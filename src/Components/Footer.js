@@ -3,7 +3,11 @@ import "../App.css";
 
 import Sicons from "./icons";
 function Footer() {
-  return <div className="MyFooter p-5">{/* <Sicons /> */}</div>;
+  return (
+    <div className="MyFooter p-5">
+      <div class="d-flex justify-content-center">...</div>
+    </div>
+  );
 }
 
 export default Footer;

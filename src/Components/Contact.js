@@ -183,7 +183,7 @@ function Contact() {
                 }}
                 id="input"
                 className="my-3 form"
-                placeholder="Massege"
+                placeholder="Message"
                 as="textarea"
                 rows={3}
                 value={comment}
