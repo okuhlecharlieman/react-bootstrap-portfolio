@@ -11,12 +11,12 @@ function Projects() {
 
   return (
     <div id="projects">
-      <div className="container my-5 ">
+      <div className="container my-5 pad ">
         <div className="Text d-flex row justify-content-end ">
           <div className="align-self-end col-lg-12 text-left mt-5">
-            <h1 className="display-6">Projects</h1>
+            <h1 className="display-6 ">Projects</h1>
             <hr></hr>
-            <Carousel data-bs-theme="dark">
+            <Carousel data-bs-theme="dark" className="mgn-tp">
               <Carousel.Item>
                 <a href="https://aglet-33abe.web.app/" target="_blank">
                   <img

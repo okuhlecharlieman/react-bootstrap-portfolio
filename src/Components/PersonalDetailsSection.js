@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 const PersonalDetails = () => {
   return (
     <div id="about">
-      <div className="container">
+      <div className="container pad">
         <div className="Text d-flex row justify-content-end ">
           <div className="align-self-end  col-lg-12 text-left mt-5">
             <span className="mx-5 display-6 d-flex">

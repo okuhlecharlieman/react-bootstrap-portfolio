@@ -140,3 +140,33 @@ p {
 .form::placeholder {
   color: aliceblue;
 }
+
+.pad {
+  padding-top: 100px;
+}
+@media (max-width: 992px) {
+  .pad {
+    padding-top: 0px;
+  }
+  #responsive-navbar-nav {
+    font-weight: 900;
+  }
+}
+.mgn-tp {
+  margin-top: 100px;
+}
+@media (min-width: 992px) {
+  #home,
+  #service,
+  #projects,
+  #contact {
+    height: 100vh;
+  }
+}
+
+#input::placeholder {
+  color: #61dafb;
+}
+#input {
+  color: white;
+}

@@ -3,14 +3,14 @@ import React from "react";
 const Services = () => {
   return (
     <div id="service">
-      <div className="container ">
+      <div className="container pad">
         <div className="Text d-flex row justify-content-end ">
           <div className="align-self-end col-lg-12 text-left mt-5">
             <h1 className="display-6">Services</h1>
             <hr />
 
             <div className="row">
-              <div className="col-lg-4 col-md-6 col-12 mt-2 pt-2">
+              <div className="col-lg-4 col-md-6 col-12 mt-5 pt-2">
                 <div className="feature-widget text-left rounded">
                   <div className="services-icon text-primary mb-3">
                     <img
@@ -30,7 +30,7 @@ const Services = () => {
                 </div>
               </div>
 
-              <div className="col-lg-4 col-md-6 col-12 mt-2  pt-2">
+              <div className="col-lg-4 col-md-6 col-12 mt-5  pt-2">
                 <div className="feature-widget text-left rounded">
                   <div className="services-icon text-primary mb-3">
                     <img
@@ -50,7 +50,7 @@ const Services = () => {
                 </div>
               </div>
 
-              <div className="col-lg-4 col-md-6 col-12 mt-2 pt-2">
+              <div className="col-lg-4 col-md-6 col-12 mt-5 pt-2">
                 <div className="feature-widget text-left rounded">
                   <div className="services-icon text-primary mb-3">
                     <img

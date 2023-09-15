@@ -5,40 +5,35 @@ import cv from "../assets/Okuhle_CharliemanCV.pdf";
 const Intro = () => {
   return (
     <div id="home">
-      <div
-        className="pmd-intro-bg-img " /*style={{backgroundImage:  'url(https://i.ibb.co/PtyTfX4/dave-netto-w-WYw-Yi-Co-Vw-I-unsplash.jpg)',backgroundRepeat:"no-repeat"}}*/
-      >
-        <div className="container ">
-          <div className="Text   d-flex row justify-content-end ">
-            <div className="align-self-start col-lg-6 text-left mt-5">
-              {" "}
-              <Photo />
-            </div>
-            <div className="intro align-self-end col-lg-6 text-left mt-5">
-              <h1 className="display-6">Hi I'm Charlieman Okuhle</h1>
-              <hr />
-              <p className="lead">
-                "I specialize in crafting beautiful and functional websites that
-                deliver exceptional user experiences. My expertise in web design
-                was honed through my studies in Information Technology at Nelson
-                Mandela University."
-              </p>
-              <a
-                href="#contact"
-                className="btn btn-outline-light pmd-ripple-effect my-5 btn-success"
-              >
-                Hire me
-              </a>{" "}
-              <a
-                href={cv}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-outline-light pmd-ripple-effect my-5"
-                download=""
-              >
-                Download CV
-              </a>
-            </div>
+      <div className="container  pad">
+        <div className="Text   d-flex row justify-content-end ">
+          <div className="align-self-start col-lg-6 text-left ">
+            <Photo />
+          </div>
+          <div className="intro align-self-end col-lg-6 text-left mt-5">
+            <h1 className="display-6">Hi I'm Charlieman Okuhle</h1>
+            <hr />
+            <p className="lead">
+              "I specialize in crafting beautiful and functional websites that
+              deliver exceptional user experiences. My expertise in web design
+              was honed through my studies in Information Technology at Nelson
+              Mandela University."
+            </p>
+            <a
+              href="#contact"
+              className="btn btn-outline-light pmd-ripple-effect my-5 btn-success"
+            >
+              Hire me
+            </a>{" "}
+            <a
+              href={cv}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline-light pmd-ripple-effect my-5"
+              download=""
+            >
+              Download CV
+            </a>
           </div>
         </div>
       </div>

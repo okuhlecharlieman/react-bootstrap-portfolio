@@ -124,7 +124,7 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className="container Text">
+    <div id="contact" className="container Text pad">
       <h1 className="display-6">Contact</h1>
       <hr />
       <div className="d-md-flex">
@@ -145,6 +145,7 @@ function Contact() {
                   background: "transparent",
                   borderRadius: 0,
                 }}
+                id="input"
                 className="my-3"
                 type="text"
                 placeholder="Enter name"
@@ -162,6 +163,7 @@ function Contact() {
                   background: "transparent",
                   borderRadius: 0,
                 }}
+                id="input"
                 className="my-3"
                 type="email"
                 placeholder="name@example.com"
@@ -179,6 +181,7 @@ function Contact() {
                   background: "transparent",
                   borderRadius: 0,
                 }}
+                id="input"
                 className="my-3 form"
                 placeholder="Massege"
                 as="textarea"
