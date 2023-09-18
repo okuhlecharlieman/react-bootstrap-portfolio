@@ -11,8 +11,14 @@ function Footer() {
         <p>
           {" "}
           © {year}{" "}
-          <a href="https://intwana.rf.gd/Charlie/"> Okuhle Charlieman. </a> All
-          Rights Reserved.
+          <a
+            href="https://intwana.rf.gd/Charlie/"
+            style={{ textDecoration: "none", color: "#FFFF" }}
+          >
+            {" "}
+            Okuhle Charlieman.{" "}
+          </a>{" "}
+          All Rights Reserved.
         </p>
       </div>
     </div>
