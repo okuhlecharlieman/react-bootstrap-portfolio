@@ -1,11 +1,20 @@
 import React from "react";
 import "../App.css";
 
-import Sicons from "./icons";
 function Footer() {
+  const currentDate = new Date();
+  const year = currentDate.getFullYear();
+
   return (
-    <div className="MyFooter p-5">
-      <div class="d-flex justify-content-center">...</div>
+    <div className="MyFooter p-3">
+      <div class="d-flex justify-content-center a">
+        <p>
+          {" "}
+          © {year}{" "}
+          <a href="https://intwana.rf.gd/Charlie/"> Okuhle Charlieman. </a> All
+          Rights Reserved.
+        </p>
+      </div>
     </div>
   );
 }
